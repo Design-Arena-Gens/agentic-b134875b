@@ -1,0 +1,50 @@
+:root {
+  --background: #05060f;
+  --foreground: #f5f5f7;
+  --surface: rgba(13, 17, 33, 0.6);
+  --surface-strong: rgba(20, 24, 45, 0.85);
+  --accent: #f4b400;
+  --accent-soft: rgba(244, 180, 0, 0.25);
+  --muted: rgba(245, 245, 247, 0.7);
+  --border: rgba(244, 244, 248, 0.1);
+  color-scheme: dark;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  color: var(--foreground);
+  background: radial-gradient(circle at top, #111936, #05060f 55%);
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.app-shell {
+  min-height: 100vh;
+  background-image: radial-gradient(
+      1200px 600px at 20% 0%,
+      rgba(245, 201, 93, 0.18),
+      transparent
+    ),
+    radial-gradient(
+      900px 900px at 80% 20%,
+      rgba(110, 161, 245, 0.12),
+      transparent
+    );
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
